@@ -104,7 +104,7 @@ public class AdvancedEmpDeptTests
 
         var result = emps.Where(e => e.Comm > 400); 
         
-        Assert.True(result.All(e=>e.Comm > 400));
+        Assert.True(result.Any(e=>e.Comm > 400));
     }
 
     // 18. Self-join to get employee-manager pairs
